@@ -8,6 +8,10 @@
 Textedit::Textedit(QWidget *parent) : QMainWindow(parent) {
   ui.setupUi(this);
 
+  /*
+  *	exp code
+  * DO NOT UNCOMMENT!
+  
   //init of actions
   actionOpen = new QAction(tr("&Open"), this);
   actionOpen->setShortcut(QKeySequence::Open);
@@ -22,6 +26,7 @@ Textedit::Textedit(QWidget *parent) : QMainWindow(parent) {
   toolBar->addAction(actionOpen);
 
   statusBar();
+  */
 }
 
 Textedit::~Textedit() {}
