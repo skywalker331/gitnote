@@ -16,5 +16,4 @@ class Textedit : public QMainWindow {
 
  private:
   Ui::TexteditClass ui;
-  QAction *actionOpen;
 };
