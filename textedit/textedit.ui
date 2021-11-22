@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>812</width>
+    <width>790</width>
     <height>596</height>
    </rect>
   </property>
@@ -17,10 +17,10 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>-10</x>
-      <y>-10</y>
-      <width>831</width>
-      <height>591</height>
+      <x>0</x>
+      <y>0</y>
+      <width>791</width>
+      <height>551</height>
      </rect>
     </property>
    </widget>
@@ -30,26 +30,27 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>812</width>
+     <width>790</width>
      <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>文件</string>
+     <string>File</string>
     </property>
     <addaction name="actionNewFile"/>
     <addaction name="actionOpenFile"/>
+    <addaction name="actionSaveFile"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
-     <string>编辑</string>
+     <string>Edit</string>
     </property>
     <addaction name="actionUndo"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>帮助</string>
+     <string>Help</string>
     </property>
    </widget>
    <addaction name="menuFile"/>
@@ -59,12 +60,12 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNewFile">
    <property name="text">
-    <string>新建</string>
+    <string>New</string>
    </property>
   </action>
   <action name="actionOpenFile">
    <property name="text">
-    <string>打开</string>
+    <string>Open</string>
    </property>
   </action>
   <action name="action">
@@ -74,7 +75,17 @@
   </action>
   <action name="actionUndo">
    <property name="text">
-    <string>撤销</string>
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionSaveFile">
+   <property name="text">
+    <string>Save</string>
    </property>
   </action>
  </widget>
