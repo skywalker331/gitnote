@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
+#include <QFileInfo>
 
 #include "ui_textedit.h"
 
@@ -14,6 +15,16 @@ class Textedit : public QMainWindow {
   Textedit(QWidget *parent = Q_NULLPTR);
   ~Textedit();
 
+  // File operations
+  void openFile();
+  void saveFile();
+  void newFile();
+
  private:
   Ui::TexteditClass ui;
+  QString path;
+  QFileInfo info;
+
+  // check if file path is default
+  bool isFileDefault;
 };
