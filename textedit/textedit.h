@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include <QFileInfo>
+#include <QFileSystemModel>
 
 #include "ui_textedit.h"
 
@@ -17,6 +18,9 @@ class Textedit : public QMainWindow {
 
   // File operations
   void openFile();
+  void openFile(const QModelIndex &index);
+  void openFile(QString path);
+  void openDir();
   void saveFile();
   void newFile();
 
@@ -24,6 +28,7 @@ class Textedit : public QMainWindow {
   Ui::TexteditClass ui;
   QString path;
   QFileInfo info;
+  QFileSystemModel modelDir;
 
   // check if file path is default
   bool isFileDefault;
