@@ -5,84 +5,113 @@
     <name>Textedit</name>
     <message>
         <source>Open file</source>
-        <translation type="vanished">打开文件</translation>
+        <translation>打开文件</translation>
     </message>
     <message>
         <source>Text files(*.txt)</source>
-        <translation type="vanished">文本文件 (*.txt)</translation>
+        <translation>文本文件 (*.txt)</translation>
     </message>
     <message>
         <source>Read file</source>
-        <translation type="vanished">读取文件</translation>
+        <translation>读取文件</translation>
     </message>
     <message>
         <source>Cannot open file: 
 %1</source>
-        <translation type="vanished">不能打开文件：
+        <translation>不能打开文件：
 %1</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="vanished">路径</translation>
+        <translation>路径</translation>
     </message>
     <message>
         <source>You didn&apos;t select any file. </source>
-        <translation type="vanished">没有选择任何文件。</translation>
+        <translation>没有选择任何文件。</translation>
     </message>
     <message>
         <source>Select file</source>
-        <translation type="vanished">选择文件</translation>
+        <translation>选择文件</translation>
     </message>
     <message>
         <source>Create new file</source>
-        <translation type="vanished">新建文件</translation>
+        <translation>新建文件</translation>
+    </message>
+    <message>
+        <source>Error: invalid path. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Can not open this directory: 
+%1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TexteditClass</name>
     <message>
         <source>File</source>
-        <translation type="vanished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">编辑</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">帮助</translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <source>New</source>
-        <translation type="vanished">新建</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Ctrl+N</source>
-        <translation type="vanished">Ctrl+N</translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">打开</translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>Ctrl+O</source>
-        <translation type="vanished">Ctrl+O</translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <source>Undo</source>
-        <translation type="vanished">撤销</translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <source>save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Ctrl+S</source>
-        <translation type="vanished">Ctrl+S</translation>
+        <translation>Ctrl+S</translation>
+    </message>
+    <message>
+        <source>Ctrl+U</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open dir</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+O</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

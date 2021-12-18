@@ -27,22 +27,22 @@ set(FORM_FILE
 set(RESOURCES_FILE 
     textedit.qrc)
 
-set(TS_FILE 
-    i18n/textedit_zh.ts 
-    )
-
-qt5_create_translation(QM_FILE ${CMAKE_BINARY_DIR}/bin ${TS_FILE})
-
 add_executable(textedit 
                 WIN32 
                 ${SRC_FILE} 
                 ${HEADER_FILE} 
                 ${FORM_FILE} 
                 ${RESOURCES_FILE}
-                ${QM_FILE}
                 )
 
 target_link_libraries(${PROJECT_NAME}
                         Qt5::Core                       
                         Qt5::Widgets 
                         )
+
+add_custom_command(TARGET textedit 
+                    POST_BUILD 
+                    COMMAND ${CMAKE_COMMAND} -E copy 
+                    ${CMAKE_CURRENT_SOURCE_DIR}/i18n/textedit_zh.qm 
+                    ${CMAKE_BINARY_DIR}/bin/textedit_zh.qm 
+                    )
