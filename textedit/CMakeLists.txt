@@ -9,7 +9,7 @@ if(CMAKE_VERSION VERSION_LESS "3.7.0")
 endif()
 
 # set(CMAKE_PREFIX_PATH "C:/Qt/Qt5.12.11/5.12.11/msvc2017_64/lib/cmake")
-find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Core Widgets LinguistTools REQUIRED)
 
 set(SRC_FILE 
     main.cpp 
@@ -39,3 +39,10 @@ target_link_libraries(${PROJECT_NAME}
                         Qt5::Core                       
                         Qt5::Widgets 
                         )
+
+add_custom_command(TARGET textedit 
+                    POST_BUILD 
+                    COMMAND ${CMAKE_COMMAND} -E copy 
+                    ${CMAKE_CURRENT_SOURCE_DIR}/i18n/textedit_zh.qm 
+                    ${CMAKE_BINARY_DIR}/bin/textedit_zh.qm 
+                    )
