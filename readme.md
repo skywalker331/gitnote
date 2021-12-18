@@ -1,17 +1,14 @@
 # gitNote
-Ò»¸ö»ùÓÚ git ½øÐÐÊý¾ÝÍ¬²½µÄÔÆ±Ê¼Ç
-## ÒÀÀµ
+ä¸€ä¸ªåŸºäºŽ git è¿›è¡Œæ•°æ®åŒæ­¥çš„äº‘ç¬”è®°
+## ä¾èµ–
 Qt 5.12.11
-## ¹¹½¨
-### Ê¹ÓÃ Visual Studio
-1. °²×°Qt£¬ Visual Studio (MSVC)£¬Qt VS Tools
-1. ´ò¿ª gitnote.sln
-1. ÔÚ VS ÀïÑ¡ÔñÆ½Ì¨ºÍÀàÐÍ½øÐÐÉú³É
+## æž„å»º
+### è®¾ç½®çŽ¯å¢ƒå˜é‡
+éœ€è¦è®¾ç½®ç³»ç»ŸçŽ¯å¢ƒå˜é‡ `CMAKE_PREFIX_PATH` ä¸º Qt çš„å®‰è£…ç›®å½•ä¸‹çš„ `lib` æˆ– `lib/cmake`ã€‚
+### ç¼–è¯‘
+1. å»ºç«‹ `build` ç›®å½•ï¼š`mkdir build && cd build`
+1. CMake é…ç½®ï¼š`cmake ..`
+1. ç¼–è¯‘ï¼š`cmake --build .`
 
-### Ê¹ÓÃ Qt Creator
-**²»½¨Òé£¬ÒòÎªÏÖÔÚµÄ .pro ÎÄ¼þÖ»ÔÚ×ÓÏîÄ¿ÖÐ£¬Ä¿Ç°»¹Ã»ÓÐÎªÕû¸ö½â¾ö·½°¸½¨Á¢ÏîÄ¿ÎÄ¼þ**     
-1. ´ò¿ª¸÷ÏîÄ¿ÀïµÄ pro ÎÄ¼þ
-1. È»ºóÖ±½Ó¸ù¾ÝÆ½Ì¨ºÍÀàÐÍÉú³É
-
-## ×¢Òâ
-ÒòÎªÆ½³£Ê¹ÓÃ VS ¿ª·¢£¬ÇÒÔÚÆäÖÐµÄ¸Ä¶¯²»»áÍ¬²½µ½ pro ÎÄ¼þÉÏ£¬Òò´ËÈçÐèÊ¹ÓÃ Qt Creator Çë¼ì²é pro ÎÄ¼þÊÇ·ñÕýÈ·¡£
+## æ³¨æ„
+ç”±äºŽåŽ†å²æ®‹ç•™åŽŸå› ï¼Œ`textedit`ç›®å½•ä¸‹è¿˜æœ‰ qmake ç”¨çš„é¡¹ç›®æ–‡ä»¶ï¼Œä¸å»ºè®®ä½¿ç”¨ã€‚
