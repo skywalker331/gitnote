@@ -43,6 +43,6 @@ target_link_libraries(${PROJECT_NAME}
 add_custom_command(TARGET textedit 
                     POST_BUILD 
                     COMMAND ${CMAKE_COMMAND} -E copy 
-                    ${CMAKE_CURRENT_SOURCE_DIR}/i18n/textedit_zh.qm 
+                    ${CMAKE_CURRENT_SOURCE_DIR}/textedit_zh.qm 
                     ${CMAKE_BINARY_DIR}/bin/textedit_zh.qm 
                     )
