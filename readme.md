@@ -10,5 +10,11 @@ Qt 5.12.11
 1. CMake 配置：`cmake ..`
 1. 编译：`cmake --build .`
 
+## 安装
+
+    cmake --install . --config Debug
+> 因为 cmake 不指定配置就无法正确安装，所以需要手动指定
+目前只有 Debug
+
 ## 注意
 由于历史残留原因，`textedit`目录下还有 qmake 用的项目文件，不建议使用。
