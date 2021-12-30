@@ -1,0 +1,40 @@
+\hypertarget{textedit_8h_source}{}\doxysection{textedit.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QtWidgets/QMainWindow>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QFileInfo>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QFileSystemModel>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}ui\_textedit.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{comment}{// forward declaration}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }QAction;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_textedit}{Textedit}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{13   Q\_OBJECT}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15  \textcolor{keyword}{public}:}
+\DoxyCodeLine{16   \mbox{\hyperlink{class_textedit}{Textedit}}(QWidget *parent = Q\_NULLPTR);}
+\DoxyCodeLine{17   \mbox{\hyperlink{class_textedit}{\string~Textedit}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19   \textcolor{comment}{// File operations}}
+\DoxyCodeLine{20   \textcolor{keywordtype}{void} openFile();}
+\DoxyCodeLine{21   \textcolor{keywordtype}{void} openFile(\textcolor{keyword}{const} QModelIndex \&index);}
+\DoxyCodeLine{22   \textcolor{keywordtype}{void} openFile(QString path);}
+\DoxyCodeLine{23   \textcolor{keywordtype}{void} openDir();}
+\DoxyCodeLine{24   \textcolor{keywordtype}{void} saveFile();}
+\DoxyCodeLine{25   \textcolor{keywordtype}{void} newFile();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27  \textcolor{keyword}{private}:}
+\DoxyCodeLine{28   Ui::TexteditClass ui;}
+\DoxyCodeLine{29   QString path;}
+\DoxyCodeLine{30   QFileInfo info;}
+\DoxyCodeLine{31   QFileSystemModel modelDir;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33   \textcolor{comment}{// check if file path is default}}
+\DoxyCodeLine{34   \textcolor{keywordtype}{bool} isFileDefault;}
+\DoxyCodeLine{35 \};}
+
+\end{DoxyCode}
